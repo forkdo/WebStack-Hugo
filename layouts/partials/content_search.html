@@ -1,13 +1,13 @@
 {{ if $.Site.Params.search }}
-<div class="header-big post-top css-color mb-4" id="search-bg" style="">
+<div class="header-big post-top css-color mb-4" id="search-bg">
     <div class="s-search">
         <div id="search" class="s-search mx-auto">
             <div id="search-list-menu" class="hide-type-list">
                 <div class="s-type text-center">
                     <div class="s-type-list big">
                         <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                        <label for="type-baidu" data-id="group-a"><span>常用</span></label>
-                        <label for="type-baidu1" data-id="group-b"><span>搜索</span></label>
+                        <label for="type-bing" data-id="group-a"><span>常用</span></label>
+                        <label for="type-bing1" data-id="group-b"><span>搜索</span></label>
                         <label for="type-whois" data-id="group-c"><span>工具</span></label>
                         <label for="type-zhihu" data-id="group-d"><span>社区</span></label>
                         <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
@@ -16,7 +16,7 @@
                 </div>
             </div>
 
-            <form action="https://www.baidu.com?s=" method="get" target="_blank" class="super-search-fm">
+            <form action="https://cn.bing.com/search?q=" method="get" target="_blank" class="super-search-fm">
                 <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei=""
                     placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
                 <button class="submit" type="submit"><i class="iconfont icon-search"></i></button>
@@ -25,11 +25,11 @@
             <div id="search-list" class="hide-type-list">
                 <div class="search-group group-a">
                     <ul class="search-type">
-                        <li><input hidden="" type="radio" name="type" checked="checked" id="type-baidu"
+                        <li><input hidden="" type="radio" name="type" id="type-baidu"
                                 value="https://www.baidu.com/s?wd=" data-placeholder="百度一下，你就知道">
                             <label for="type-baidu"><span class="text-muted">百度</span></label>
                         </li>
-                        <li><input hidden="" type="radio" name="type" id="type-bing"
+                        <li><input hidden="" type="radio" name="type" checked="checked" id="type-bing"
                                 value="https://cn.bing.com/search?q=" data-placeholder="微软 Bing 搜索">
                             <label for="type-bing"><span class="text-muted">必应</span></label>
                         </li>
@@ -58,7 +58,7 @@
                             <label for="type-google1"><span class="text-muted">谷歌</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" id="type-360" value="https://www.so.com/s?q="
-                                data-placeholder="360 好搜">
+                                data-placeholder="360 搜索">
                             <label for="type-360"><span class="text-muted">360</span></label>
                         </li>
                         <li><input hidden="" type="radio" name="type" id="type-sogo"
